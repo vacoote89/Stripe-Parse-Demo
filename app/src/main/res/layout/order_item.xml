@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logoDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvRestaurant"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="McDonald's" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="270dp"
+        android:layout_height="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/ivLogo"
+        app:layout_constraintTop_toBottomOf="@+id/tvRestaurant"
+        tools:text="123 N Monroe Tallahassee FL 34567" />
+</androidx.constraintlayout.widget.ConstraintLayout>

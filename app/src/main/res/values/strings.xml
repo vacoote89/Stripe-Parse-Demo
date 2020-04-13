@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Order Demo</string>
+    <string name="backend_url">http://stripe.attendapps.com/sandbox/</string>
+    <string name="backend_app_id">YOUR_APP_ID</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logoDesc">logo description</string>
+    <string name="create_user">Create User</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="create_card">Create Card</string>
+    <string name="pay">Pay</string>
+
+</resources>

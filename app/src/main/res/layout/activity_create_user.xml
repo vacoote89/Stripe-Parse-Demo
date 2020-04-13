@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateUser">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailParent"
+        android:layout_below="@id/nameParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/nameParent"
+        android:layout_alignTop="@id/nameParent"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailParent"
+        android:layout_alignStart="@id/emailParent"
+        android:layout_alignTop="@id/emailParent"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="60dp"
+        tools:ignore="InvalidId">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/line1Parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneParent"
+        android:layout_alignStart="@id/phoneParent"
+        android:layout_alignTop="@id/phoneParent"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="60dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address Line 1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/line2Parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1Parent"
+        android:layout_alignStart="@id/line1Parent"
+        android:layout_alignTop="@id/line1Parent"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="60dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address Line 2" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cityParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2Parent"
+        android:layout_alignStart="@id/line2Parent"
+        android:layout_alignTop="@id/line2Parent"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="60dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/stateParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityParent"
+        android:layout_alignStart="@id/cityParent"
+        android:layout_alignTop="@id/cityParent"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="60dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/postalParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stateParent"
+        android:layout_alignStart="@id/stateParent"
+        android:layout_alignTop="@id/stateParent"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="60dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPostal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Postal Code" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/addCard"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/postalParent"
+        android:layout_alignStart="@id/postalParent"
+        android:layout_alignTop="@id/postalParent"
+        android:layout_centerHorizontal="true"
+        android:text="Include Credit Card"
+        android:checked="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="60dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/addCard"
+        android:layout_alignTop="@id/addCard"
+        >
+        <com.stripe.android.view.CardInputWidget
+            android:id="@+id/cardInputWidget"
+            android:layout_width="350dp"
+            android:layout_height="43dp"
+
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnAddCustomer"
+        android:layout_width="224dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/conLayout"
+        android:layout_alignStart="@+id/conLayout"
+        android:layout_alignTop="@+id/conLayout"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="110dp"
+        android:background="#D81B60"
+        android:text="Create Customer"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

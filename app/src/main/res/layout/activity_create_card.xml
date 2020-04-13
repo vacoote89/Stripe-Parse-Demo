@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CreateCard">
+
+    <!--  ...  -->
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/cardInputWidget"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddCard"
+        android:layout_width="124dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="104dp"
+        android:background="#D81B60"
+        android:text="@string/create_card"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/cardInputWidget"
+        app:layout_constraintStart_toStartOf="@+id/cardInputWidget"
+        app:layout_constraintTop_toBottomOf="@+id/cardInputWidget" />
+
+    <!--  ...  -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
